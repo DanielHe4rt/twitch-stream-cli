@@ -5,16 +5,13 @@ seguinte, aqui serão anotadas ideias pro projeto de gamificação.
 - os ataques de boss serão async onde será uma fila
 
 tela
+```
 #######################################################################
-
-# Boss Name User Name
-
-# B. Sprite <-- attack <-- P. Sprite
-
-# Platform Platform
-
+# Boss Name                                      User Name
+# B. Sprite           <-- attack <--             P. Sprite
+# Platform                                        Platform
 #######################################################################
-
+```
 Fluxo:
 
 Usuário insere uma ficha (resgata pontos)
