@@ -1,0 +1,18 @@
+[
+  {
+    "keycode": 67,
+    "scene": "main"
+  },
+  {
+    "keycode": 68,
+    "scene": "chatting"
+  },
+  {
+    "keycode": 87,
+    "scene": "waiting"
+  },
+  {
+    "keycode": 88,
+    "scene": "debug"
+  }
+]

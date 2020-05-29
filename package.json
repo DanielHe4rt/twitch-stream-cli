@@ -7,5 +7,20 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "danielhe4rt",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "iohook": "^0.6.5",
+    "net": "^1.0.2",
+    "obs-websocket-js": "^4.0.1",
+    "parse-color": "^1.0.0",
+    "play-sound": "^1.1.3",
+    "prompt-sync": "^4.2.0",
+    "say": "^0.16.0",
+    "socket.io": "^2.3.0",
+    "text-to-speech-js": "^1.1.9",
+    "tmi.js": "^1.5.0",
+    "websocket": "^1.0.31"
+  }
 }

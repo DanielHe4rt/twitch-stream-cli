@@ -1,0 +1,38 @@
+{
+  "follow": {
+    "id": 1,
+    "method": "start_cf",
+    "params": [15, 0, "350, 1, 16740608, 100, 350, 1, 27903, 100"]
+  },
+  "cheers": {
+    "id": 1,
+    "method": "start_cf",
+    "params": [2, 0, "450, 1, 9765119, 100, 450, 1, 13382604, 100"]
+  },
+
+  "water": {
+    "id": 1,
+    "method": "start_cf",
+    "params": [2, 0, "450, 1, 9765119, 100, 450, 1, 13382604, 100"]
+  },
+  "xmas_party": {
+    "id": 1,
+    "method": "start_cf",
+    "params": [30, 0, "100, 1, 16714496, 100, 100, 1, 1310975, 100"]
+  },
+  "subscribe": {
+    "id": 1,
+    "method": "start_cf",
+    "params": [42, 0, "200, 1, 3394611, 100, 200, 1, 10223871, 100"]
+  },
+  "color": {
+    "id": 1,
+    "method": "set_rgb",
+    "params": [255, "smooth", 500]
+  },
+  "bright": {
+    "id": 1,
+    "method": "set_bright",
+    "params": [100, "smooth", 500]
+  }
+}
