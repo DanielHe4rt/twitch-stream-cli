@@ -1,7 +1,9 @@
-const fs = require("fs");
-const messageHandler = (msg) => {
-  let username = msg.split(" ")[0];
-  let patterns = [
+import fs from 'fs';
+
+
+const messageHandler = msg => {
+  const username = msg.split(" ")[0];
+  const patterns = [
     {
       type: "follow",
       pattern: "desenvolvedor do cor4ção",
@@ -14,17 +16,13 @@ const messageHandler = (msg) => {
     },
   ];
 
-  let result = patterns.find((p) => {
-    return msg.includes(p.pattern);
-  });
-  if (!result) {
-    return false;
-  }
+  const result = patterns.find(p => msg.includes(p.pattern));
+
+  if (!result) return false;
+
   fs.writeFileSync("./outputs/" + result.fileToSave, username);
 
   return result.type === "follow";
 };
 
-module.exports = {
-  messageHandler,
-};
+export default messageHandler;
