@@ -84,7 +84,7 @@ twitch.on("connect", function (connection) {
         let username = response.data.redemption.user.display_name;
 
         userList.push(username);
-        io.emit("user-list", { users: userList.length ? userList : [] });
+        io.emit("attacks", { username });
         let redemptionId = response.data.redemption.reward.id;
         if (redemptionId === "54bd67d1-fbea-4021-840a-0311618ff227") {
           epilepticMode();
@@ -122,39 +122,6 @@ console.log("Tamo on");
 
 client.on("message", (channel, userstate, chatMessage, self) => {
   console.log("Message: " + userstate["username"] + " - " + chatMessage);
-  if (userstate["username"] === "streamlabs") {
-    if (messageHandler(chatMessage)) {
-      follow();
-    }
-  }
-  let msg = chatMessage.split(" ");
-  if (msg) {
-    switch (msg[0]) {
-      case "!color":
-        console.log("color change");
-        colorHandler(msg[1]);
-        break;
-    }
-  }
-
-  if (userstate["username"] === "danielhe4rt") {
-    switch (msg[0]) {
-      case "!color":
-        colorHandler(msg[1]);
-        break;
-      case "test_subscribe":
-        subscribe();
-        break;
-      case "test_cheers":
-        console.log("fdse");
-        cheers(msg[1]);
-        break;
-      case "test_follow":
-        console.log("fdse");
-        follow();
-        break;
-    }
-  }
 });
 
 client.on("cheer", (channel, userstate, chatMessage) => {

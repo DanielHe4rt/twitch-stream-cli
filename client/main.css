@@ -2,3 +2,7 @@ body {
   color: #3c3;
   background-color: black;
 }
+
+canvas {
+  overflow: hidden;
+}

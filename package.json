@@ -11,6 +11,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "fs": "0.0.1-security",
+    "fs-extra": "^9.0.0",
     "iohook": "^0.6.5",
     "net": "^1.0.2",
     "obs-websocket-js": "^4.0.1",
