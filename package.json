@@ -9,7 +9,7 @@
   "author": "danielhe4rt",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fs": "0.0.1-security",
     "fs-extra": "^9.0.0",
     "iohook": "^0.6.5",
